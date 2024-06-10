@@ -45,9 +45,9 @@ mouse.KeyDown:Connect(function(key)
 			spawn(function()
 				while true do
 					task.wait()
-					root.Velocity = Vector3.new(math.random(500,5000),math.random(500,50000),math.random(-9500,9500))
-					root.AssemblyAngularVelocity = Vector3.new(math.random(-9500,9500),math.random(-9500,9500),math.random(-9500,10000))
-					root.CFrame = CFrame.new(Vector3.new(math.random(-500,500),5000,math.random(-500,500)))
+					root.Velocity = Vector3.new(math.random(-50000,50000),math.random(-50000,500000),math.random(-950000,950000))
+					root.AssemblyAngularVelocity = Vector3.new(math.random(-950000,950000),math.random(-950000,950000),math.random(-950000,1000000))
+					root.CFrame = CFrame.new(Vector3.new(math.random(-500,500),5000,math.random(4900,5000)))
 					if not invis then
 						break
 					end
@@ -104,7 +104,7 @@ task.spawn(function() -- fake lag
 			task.wait(math.random(60,180)/130)
 			root.Anchored = false
 			follow = true
-			task.wait()
+			task.wait(.05)
 		end
 		task.wait()
 	end
