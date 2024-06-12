@@ -45,8 +45,8 @@ mouse.KeyDown:Connect(function(key)
 			spawn(function()
 				while true do
 					task.wait()
-					root.Velocity = Vector3.new(math.random(-50000,50000),math.random(-50000,500000),math.random(-950000,950000))
-					root.AssemblyAngularVelocity = Vector3.new(math.random(-950000,950000),math.random(-950000,950000),math.random(-950000,1000000))
+					root.Velocity = Vector3.new(math.random(-50000,50000),math.random(0,500000),math.random(-950000,950000))
+					root.AssemblyAngularVelocity = Vector3.new(math.random(-950000,950000),math.random(0,950000),math.random(-950000,1000000))
 					root.CFrame = CFrame.new(Vector3.new(math.random(-500,500),5000,math.random(4900,5000)))
 					if not invis then
 						break
